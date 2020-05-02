@@ -1,0 +1,29 @@
+.pie {
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+
+.pie h3 {
+    align-self: center;
+}
+
+.pie nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: stretch;
+    justify-items: center;
+}
+
+.pie nav li {
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.pie nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pie nav li a:hover {
+    text-decoration: underline;
+}

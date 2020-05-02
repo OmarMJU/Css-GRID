@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    max-width: 1500px;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient( rgba(0,0,0,1) 22%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(4, 500px) 100px;
+    grid-template-areas: "cabezera cabezera cabezera"
+                         "presentacion presentacion presentacion"
+                         "textos textos textos"
+                         "textos2 textos2 textos2"
+                         "asaid asaid asaid"
+                         "footer footer  footer";
+}
+
+body .cabezera {
+    grid-area: cabezera;
+}
+
+body .presentacion {
+    grid-area: presentacion;
+}
+
+body .textos {
+    grid-area: textos;
+}
+
+body .textos2 {
+    grid-area: textos2;
+}
+
+body .aside {
+    grid-area: asaid;   
+}
+
+body .pie {
+    grid-area: footer;
+}
+
+.cabezera, .pie  {
+    color: #fff;
+    background-color: #000;
+}

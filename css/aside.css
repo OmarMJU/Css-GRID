@@ -1,0 +1,38 @@
+.aside {
+    display: grid;
+    grid-template-rows: 50px auto;
+    margin-bottom: 70px;
+}
+
+.aside h3 {
+    font-size: 40px;
+    justify-self: center;
+    align-self: center;
+}
+
+.aside .contedor-logos {
+    display: grid;
+    padding: 0px 55px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.aside .contedor-logos .iconos-text {
+    padding: 0px 10px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.aside .contedor-logos .iconos-text i {
+    justify-self: center;
+    align-self: center;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.aside .contedor-logos .iconos-text p {
+    font-size: 16px;
+    text-align: center;
+}
